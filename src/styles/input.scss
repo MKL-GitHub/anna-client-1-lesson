@@ -1,0 +1,19 @@
+.input {
+  border: 1px solid var(--border-color);
+
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  transition: border-color var(--transition-time);
+  border-radius: var(--border-radius);
+
+  &:hover {
+    border-color: var(--border-hover-color);
+  }
+
+  &-placeholder {
+    color: var(--placeholder-color);
+    font-size: var(--placeholder-font-size);
+    margin: 0 0.5rem;
+  }
+}

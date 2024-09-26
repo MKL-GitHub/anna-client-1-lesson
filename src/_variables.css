@@ -1,0 +1,20 @@
+:root {
+  --white-filter: brightness(0) saturate(100%) invert(99%) sepia(2%)
+    saturate(0%) hue-rotate(198deg) brightness(105%) contrast(100%);
+
+  --bg: #333;
+  --hover-bg: #6666663b;
+  --active-bg: #4141ff49;
+  --active-hover-bg: #6f6fcc49;
+
+  --color: white;
+
+  --border-color: white;
+  --border-hover-color: #9090ff;
+  --border-radius: 5px;
+
+  --placeholder-color: #ffffff67;
+  --placeholder-font-size: 0.9rem;
+
+  --transition-time: 300ms;
+}
