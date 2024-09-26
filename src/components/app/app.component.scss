@@ -1,0 +1,36 @@
+#app {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  color: var(--color);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  gap: 2rem;
+  width: fit-content;
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  margin: 0 auto;
+  gap: 2rem;
+  width: fit-content;
+  margin-top: 5rem;
+}
+
+.check-form {
+  color: white;
+  border: 1px solid white;
+  height: fit-content;
+  padding: 1rem;
+  transition: all 300ms;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.39);
+  }
+}

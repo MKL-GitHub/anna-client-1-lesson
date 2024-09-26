@@ -1,0 +1,11 @@
+.Header {
+  height: 3rem;
+  background-color: red;
+  border: 1px solid black;
+
+  &__nav {
+    background-color: green;
+    height: 2rem;
+    border: 1px solid black;
+  }
+}
