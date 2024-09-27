@@ -34,3 +34,18 @@ form {
     background-color: rgba(255, 255, 255, 0.39);
   }
 }
+
+nav {
+  background-color: #00000028;
+  width: 500px;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  color: rgb(224, 224, 255);
+}
