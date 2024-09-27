@@ -2,6 +2,8 @@ import "./app.component.scss";
 import Select from "../select/select.component";
 import mockCities from "./mock-cities";
 import Cities from "../cities/cities.component";
+import Puzzle from "../puzzle/puzzle.component";
+import { $ } from "../../util";
 
 const App = () => {
   const app = document.getElementById("app");
@@ -12,9 +14,54 @@ const App = () => {
 
   const main = document.createElement("main");
 
-  const cities = Cities();
+  // const main = $(
+  //   "main",
+  //   {},
+  //   $(
+  //     "nav",
+  //     { className: "nav" },
+  //     $(
+  //       "ul",
+  //       { className: "ul" },
+  //       $("li", { className: "li", textContent: "li1" }),
+  //       $("li", { className: "li", textContent: "li2" }),
+  //       $("li", { className: "li", textContent: "li3" }),
+  //       $("li", { className: "li", textContent: "li4" })
+  //     )
+  //   )
+  // );
 
-  main.append(cities);
+  // const nav = document.createElement("nav");
+  // const ul = document.createElement("ul");
+  // const li1 = document.createElement("li");
+  // const li2 = document.createElement("li");
+  // const li3 = document.createElement("li");
+  // const li4 = document.createElement("li");
+
+  // li1.textContent = "li1";
+  // li2.textContent = "li2";
+  // li3.textContent = "li3";
+  // li4.textContent = "li4";
+
+  // nav.className = "nav";
+  // ul.className = "ul";
+  // li1.className = "li";
+  // li2.className = "li";
+  // li3.className = "li";
+  // li4.className = "li";
+
+  // nav.append(ul);
+  // ul.append(li1, li2, li3, li4);
+
+  // main.append(nav);
+
+  const puzzle = Puzzle();
+
+  main.append(puzzle);
+
+  // const cities = Cities();
+
+  // main.append(cities);
   // const form = document.createElement("form");
   // const checkFormButton = document.createElement("button");
 
