@@ -1,0 +1,41 @@
+$size: 500px;
+$bg: #38e955;
+
+$offset: 3px;
+$tail-size: calc(50px - $offset * 2);
+
+.Snake {
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &__tail {
+    position: absolute;
+    top: calc($offset);
+    left: $offset;
+    width: $tail-size;
+    height: $tail-size;
+    border-radius: 50%;
+    // transform: translate(12px, 35px); // rotate(45deg);
+    // border-width: 10px 10px 10px 10px;
+    // border-style: solid;
+    // border-color: $bg $bg transparent $bg;
+    // border-color: $bg $bg $bg transparent;
+    background-color: $bg;
+  }
+
+  &__food {
+    position: absolute;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__body {
+    position: absolute;
+    width: $tail-size;
+    height: $tail-size;
+    border-radius: 50%;
+    background-color: $bg;
+  }
+}

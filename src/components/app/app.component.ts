@@ -3,7 +3,8 @@ import Select from "../select/select.component";
 import mockCities from "./mock-cities";
 import Cities from "../cities/cities.component";
 import Puzzle from "../puzzle/puzzle.component";
-import { $ } from "../../util";
+import { $ } from "../../utils";
+import Snake from "../snake/snake.component";
 
 const App = () => {
   const app = document.getElementById("app");
@@ -13,6 +14,8 @@ const App = () => {
   }
 
   const main = document.createElement("main");
+
+  main.append(Snake());
 
   // const main = $(
   //   "main",
@@ -55,9 +58,9 @@ const App = () => {
 
   // main.append(nav);
 
-  const puzzle = Puzzle();
+  // const puzzle = Puzzle();
 
-  main.append(puzzle);
+  // main.append(puzzle);
 
   // const cities = Cities();
 

@@ -1,4 +1,4 @@
-import { bem } from "../../util";
+import { bem } from "@utils";
 import { boxSize, complexity, puzzleSize } from "./constants";
 import "./puzzle.component.scss";
 import { mixToEnd } from "./utils";

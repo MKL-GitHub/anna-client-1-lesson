@@ -1,0 +1,63 @@
+$offset: 3px;
+$head-size: calc(50px - $offset * 2);
+$eye-size: calc($head-size / 3);
+$bg: #38e955;
+
+.SnakeHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc($offset + 50px);
+  left: $offset;
+  background-color: $bg;
+  border-radius: 50%;
+  width: $head-size;
+  height: $head-size;
+  // transition: left 300ms, top 300ms; //, rotate 300ms;
+
+  &__eyes-container {
+    display: flex;
+    gap: calc($eye-size/5);
+  }
+
+  &__eye {
+    position: relative;
+    width: $eye-size;
+    height: $eye-size;
+    border-radius: 50%;
+
+    &::after {
+      content: "👁️";
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      transform: translate(-6px, -1px);
+    }
+  }
+
+  &__mouth {
+    position: relative;
+    width: 50%;
+    height: 10px;
+
+    &::after {
+      content: ""; //"👄";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: 50%;
+      top: 0;
+      font-size: 16px;
+      transform: translate(-50%, 10px) rotate(45deg);
+      border-width: 10px 0 0 10px;
+      border-style: solid;
+      border-color: $bg transparent transparent $bg;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { getRandom } from "../../util";
+import { getRandom } from "../../utils";
 import { complexity, mixComplexity } from "./constants";
 
 export const mix = (puzzle: HTMLDivElement) => {
