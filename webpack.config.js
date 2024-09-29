@@ -13,6 +13,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".ts"],
+    modules: ["node_modules", "src"],
+    alias: {
+      "@utils": path.resolve(__dirname, "src", "utils"),
+    },
   },
   module: {
     rules: [
