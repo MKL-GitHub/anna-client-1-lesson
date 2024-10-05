@@ -1,0 +1,12 @@
+{
+  "table": "table",
+  "column": "column",
+  "cell": "cell",
+  "name": "name",
+  "string": "string",
+  "cat": {
+    "one": "cat",
+    "few": "cats",
+    "many": "cats"
+  }
+}

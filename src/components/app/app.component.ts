@@ -3,8 +3,11 @@ import Select from "../select/select.component";
 import mockCities from "./mock-cities";
 import Cities from "../cities/cities.component";
 import Puzzle from "../puzzle/puzzle.component";
-import { $ } from "../../utils";
+// import { $ } from "../../utils";
 import Snake from "../snake/snake.component";
+import { $ } from "@utils";
+import { t } from "@i18n";
+import { LanguageImitation } from "@components";
 
 const App = () => {
   const app = document.getElementById("app");
@@ -15,7 +18,9 @@ const App = () => {
 
   const main = document.createElement("main");
 
-  main.append(Snake());
+  main.append(LanguageImitation());
+
+  // main.append(Snake());
 
   // const main = $(
   //   "main",

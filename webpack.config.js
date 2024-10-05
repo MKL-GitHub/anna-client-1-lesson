@@ -12,10 +12,12 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    extensions: [".js", ".ts"],
+    extensions: [".js", ".ts", ".json"],
     modules: ["node_modules", "src"],
     alias: {
       "@utils": path.resolve(__dirname, "src", "utils"),
+      "@i18n": path.resolve(__dirname, "src", "i18n"),
+      "@components": path.resolve(__dirname, "src", "components"),
     },
   },
   module: {
