@@ -1,0 +1,12 @@
+{
+  "table": "tableau",
+  "column": "colonne",
+  "cell": "cellule",
+  "name": "nom",
+  "string": "chaîne",
+  "cat": {
+    "one": "chat",
+    "few": "chats",
+    "many": "chats"
+  }
+}
